@@ -1,0 +1,804 @@
+section {
+    margin-top: 5vw;
+    margin-bottom: 10vw;
+}
+
+
+.text-container {
+
+    margin: 5vh auto;
+    font-family: "Audiowide", sans-serif;
+    line-height: 6vh;
+    text-align: center;
+
+    .line1 {
+        font-size: 5vw;
+    }
+
+    .line2 {
+        font-family: Audiowide;
+        font-size: 2.5vw;
+        line-height: 9vh;
+        color: rgb(36, 35, 35);
+        text-shadow: 0.1vh 0.1vh white;
+
+        .line2-2 {
+            text-shadow: none;
+            color: white;
+        }
+    }
+}
+
+.items-container {
+    position: relative;
+    display: flex;
+    right: 4.5vw;
+    top: -2vw;
+
+    .ellipse {
+        width: 47vw;
+        height: 37vw;
+        position: absolute;
+        top: 9vw;
+        left: 20.5vw;
+        background: radial-gradient(30% 30% at 60% 70%, rgba(5, 241, 241, 0.2) 0%, rgba(25, 25, 25, 0) 100%);
+        border-radius: 50%;
+        border: 0.07vw solid rgb(54, 54, 85);
+        z-index: -1;
+    }
+
+    .ellipse2 {
+        width: 100vw;
+        height: 100vw;
+        position: absolute;
+        top: -30vw;
+        left: -4vw;
+        background: radial-gradient(40% 40% at 50% 50%, rgba(90, 95, 130, 0.3) 0%, rgba(25, 25, 25, 0) 100%);
+        border-radius: 50%;
+        z-index: -1;
+    }
+    
+    .ellipse11 {
+        z-index: -1;
+        width: 35vw;
+        height: 35vw;
+        top: 10vw;
+        left: -30vw;
+        position: absolute;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(57, 197, 198, 0.3) 0%, rgba(25, 25, 25, 0) 100%);
+    }
+
+    .ellipse12 {
+        z-index: -1;
+        width: 35vw;
+        height: 35vw;
+        top: -10vw;
+        left: 85vw;
+        opacity: 0.3;
+        position: absolute;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(245, 83, 150, 1) 0%, rgba(25, 25, 25, 0) 100%);
+    }
+
+    img {
+        position: relative;
+        width: 35vw;
+        height: 47vw;
+        top: 2vw;
+        left: 5vw;
+    }
+
+    .description-left{
+        position: relative;
+        left: 3vw;
+        font-size: 0.8vw;
+        max-height: 0;
+        width: 15vw;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        transform: skewX(35deg);
+        font-family: TT Commons;
+        color: rgba(139, 129, 129, 1);
+    }
+
+    .description-right{
+        position: relative;
+        left: 2vw;
+        font-size: 0.8vw;
+        max-height: 0;
+        width: 15vw;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        transform: skewX(-35deg);
+        font-family: TT Commons;
+        color: rgba(139, 129, 129, 1);
+    }
+
+    .item-1 {
+        top: 8.8vw;
+        left: 15vw;
+        width: 20vw;
+        background: linear-gradient(90deg, rgba(64, 72, 72, 0.1), rgba(173, 173, 173, 0.1) 100%);
+        border-radius: 15px 30px 15px 30px;
+        transform: skewX(-35deg);
+        position: relative;
+        z-index: 2;
+
+        button {
+            display: flex;
+            position: inherit;
+            background-color: transparent;
+            color: white;
+            cursor: pointer;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.2vw;
+            width: 20vw;
+
+            span {
+                position: relative;
+                top: 1vw;
+                left: 4vw;
+                width: 8vw;
+                font-family: "TT Commons";
+                font-size: 1.2vw;
+                line-height: 1.5vw;
+                text-align: left;
+                transform: skewX(35deg);
+            }
+
+            img {
+                position: relative;
+                top: 1.5vw;
+                left: 4.5vw;
+                padding: 2%;
+                width: 0.7vw;
+                height: 0.7vw;
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, 0.1);
+                transform: skewX(35deg);
+
+            }
+        }
+    }
+
+    .nbr-1 {
+
+        font-family: Audiowide;
+        font-size: 1.5vw;
+        position: relative;
+        top: 9vw;
+        left: 17vw;
+    }
+
+    .item-2 {
+        position: relative;
+        top: 13vw;
+        left: 3vw;
+        width: 20vw;
+        background: linear-gradient(90deg, rgba(64, 72, 72, 0.1), rgba(173, 173, 173, 0.1) 100%);
+        border-radius: 15px 30px 15px 30px;
+        transform: skewX(-35deg);
+        z-index: 2;
+
+        button {
+            display: flex;
+            position: inherit;
+            background: none;
+            color: white;
+            cursor: pointer;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.2vw;
+            width: 20vw;
+
+            span {
+                position: relative;
+                top: 2vw;
+                left: 4.5vw;
+                width: 8vw;
+                font-family: "TT Commons";
+                font-size: 1.2vw;
+                text-align: left;
+                transform: skewX(35deg);
+            }
+
+            img {
+                position: relative;
+                top: 1.5vw;
+                left:4.5vw;
+                padding: 2%;
+                width: 0.7vw;
+                height: 0.7vw;
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, 0.1);
+                transform: skewX(35deg);
+            }
+
+            
+        }
+    }
+
+    .nbr-2 {
+
+        font-family: Audiowide;
+        font-size: 1.5vw;
+        position: relative;
+        top: 13vw;
+        left: 5vw;
+    }
+
+    .item-3 {
+        position: relative;
+        top: 17vw;
+        left: 3.8vw;
+        width: 20vw;
+        background: linear-gradient(90deg, rgba(64, 72, 72, 0.1), rgba(173, 173, 173, 0.1) 100%);
+        border-radius: 15px 30px 15px 30px;
+        transform: skewX(-35deg);
+        z-index: 2;
+
+        button{
+            display: flex;
+            position: inherit;
+            background: none;
+            color: white;
+            cursor: pointer;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.2vw;
+            width: 20vw;
+        }
+
+        span {
+            position: relative;
+            top: 1vw;
+            left: 3vw;
+            width: 8vw;
+            font-family: "TT Commons";
+            font-size: 1.2vw;
+            line-height: 1.5vw;
+            text-align: left;
+            transform: skewX(35deg);
+        }
+
+        img {
+            position: relative;
+            top: 1.5vw;
+            left: 4.5vw;
+            padding: 2%;
+            width: 0.7vw;
+            height: 0.7vw;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: skewX(35deg);
+
+        }
+
+    }
+
+    .nbr-3 {
+
+        font-family: Audiowide;
+        font-size: 1.5vw;
+        position: relative;
+        top: 17vw;
+        left: 6vw;
+    }
+
+    .item-4 {
+        position: relative;
+        top: 20vw;
+        left: 17vw;
+        width: 20vw;
+        background: linear-gradient(90deg, rgba(64, 72, 72, 0.1), rgba(173, 173, 173, 0.1) 100%);
+        border-radius: 15px 30px 15px 30px;
+        transform: skewX(-35deg);
+        z-index: 2;
+
+        button{
+            display: flex;
+            position: inherit;
+            background: none;
+            color: white;
+            cursor: pointer;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.2vw;
+            width: 20vw;
+        }
+        span {
+            position: relative;
+            top: 1vw;
+            left: 4vw;
+            width: 8vw;
+            font-family: "TT Commons";
+            font-size: 1.2vw;
+            line-height: 1.5vw;
+            text-align: left;
+            transform: skewX(35deg);
+        }
+
+        img {
+            position: relative;
+            top: 1.5vw;
+            left: 4.5vw;
+            padding: 2%;
+            width: 0.7vw;
+            height: 0.7vw;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: skewX(35deg);
+
+        }
+    }
+
+    .nbr-4 {
+
+        font-family: Audiowide;
+        font-size: 1.5vw;
+        position: relative;
+        top: 20vw;
+        left: 20vw;
+    }
+
+    .item-5 {
+        position: relative;
+        top: 8.7vw;
+        right: 2.8vw;
+        width: 20vw;
+        background: linear-gradient(90deg, rgba(173, 173, 173, 0.1) 100%, rgba(64, 72, 72, 0.1));
+        border-radius: 30px 15px 30px 15px;
+        transform: skewX(35deg);
+
+        button{
+            display: flex;
+            position: inherit;
+            background: none;
+            color: white;
+            cursor: pointer;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.2vw;
+            width: 20vw;
+        }
+        span {
+            position: relative;
+            top: 1vw;
+            left: 5vw;
+            width: 8vw;
+            font-family: "TT Commons";
+            font-size: 1.2vw;
+            line-height: 1.5vw;
+            text-align: left;
+            transform: skewX(-35deg);
+        }
+
+        img {
+            position: relative;
+            top: 1.3vw;
+            left: 1vw;
+            padding: 2%;
+            width: 0.7vw;
+            height: 0.7vw;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: skewX(-35deg);
+        }
+    }
+
+    .nbr-5 {
+
+        font-family: Audiowide;
+        font-size: 1.5vw;
+        position: relative;
+        top: 9vw;
+        right: -2vw;
+    }
+
+    .item-6 {
+        position: relative;
+        top: 12.5vw;
+        right: -10vw;
+        width: 20vw;
+        background: linear-gradient(90deg, rgba(173, 173, 173, 0.1) 100%, rgba(64, 72, 72, 0.1));
+        border-radius: 30px 15px 30px 15px;
+        transform: skewX(35deg);
+        z-index: 2;
+
+        button{
+            display: flex;
+            position: inherit;
+            background: none;
+            color: white;
+            cursor: pointer;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.2vw;
+            width: 20vw;
+        }
+
+        span {
+            position: relative;
+            top: 1.5vw;
+            left: 5vw;
+            width: 8vw;
+            font-family: "TT Commons";
+            font-size: 1.2vw;
+            line-height: 1.5vw;
+            text-align: left;
+            transform: skewX(-35deg);
+        }
+
+        img {
+            position: relative;
+            top: 1.3vw;
+            left: 1vw;
+            padding: 2%;
+            width: 0.7vw;
+            height: 0.7vw;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: skewX(-35deg);
+        }
+    }
+
+    .nbr-6 {
+
+        font-family: Audiowide;
+        font-size: 1.5vw;
+        position: relative;
+        top: 12.5vw;
+        right: -15vw;
+    }
+
+    .item-7 {
+        position: relative;
+        top: 17vw;
+        right: -9.5vw;
+        width: 20vw;
+        background: linear-gradient(90deg, rgba(173, 173, 173, 0.1) 100%, rgba(64, 72, 72, 0.1));
+        border-radius: 30px 15px 30px 15px;
+        transform: skewX(35deg);
+        z-index: 2;
+
+        button{
+            display: flex;
+            position: inherit;
+            background: none;
+            color: white;
+            cursor: pointer;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.2vw;
+            width: 20vw;
+        }
+        span {
+            position: relative;
+            top: 1.5vw;
+            left: 5vw;
+            width: 8vw;
+            font-family: "TT Commons";
+            font-size: 1.2vw;
+            line-height: 1.5vw;
+            text-align: left;
+            transform: skewX(-35deg);
+        }
+
+        img {
+            position: relative;
+            top: 1.3vw;
+            left: 1vw;
+            padding: 2%;
+            width: 0.7vw;
+            height: 0.7vw;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: skewX(-35deg);
+        }
+
+    }
+
+    .nbr-7 {
+
+        font-family: Audiowide;
+        font-size: 1.5vw;
+        position: relative;
+        top: 17vw;
+        right: -15vw;
+    }
+
+    .item-8 {
+        position: relative;
+        top: 20vw;
+        right: 3.5vw;
+        width: 20vw;
+        background: linear-gradient(90deg, rgba(173, 173, 173, 0.1) 100%, rgba(64, 72, 72, 0.1));
+        border-radius: 30px 15px 30px 15px;
+        transform: skewX(35deg);
+        z-index: 2;
+
+        button{
+            display: flex;
+            position: inherit;
+            background: none;
+            color: white;
+            cursor: pointer;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.2vw;
+            width: 20vw;
+        }
+
+        span {
+            position: relative;
+            left: 2vw;
+            width: 12vw;
+            font-family: "TT Commons";
+            font-size: 1.2vw;
+            line-height: 1.5vw;
+            text-align: left;
+            transform: skewX(-35deg);
+        }
+
+        img {
+            position: relative;
+            top: 1.3vw;
+            left: 1vw;
+            padding: 2%;
+            width: 0.7vw;
+            height: 0.7vw;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: skewX(-35deg);
+        }
+    }
+
+    .nbr-8 {
+        font-family: Audiowide;
+        font-size: 1.5vw;
+        position: relative;
+        top: 20vw;
+        right: -2vw;
+    }
+}
+
+
+
+
+
+
+/* ------- CHARTS ------- */
+$configs: (
+    chart-1: (svgSize: 5vw,
+        percentage: 11,
+        strokeWidth: 0.8vw,
+        backgroundColor: #000000,
+        foregroundColor: #00f7ff,
+        labelColor: #c6e8d7,
+        labelFontSize: 1vw,
+        duration: 3s,
+        animationDelay: 1s,
+    ),
+    chart-2: (svgSize: 5vw,
+        percentage: 30,
+        strokeWidth: 0.8vw,
+        backgroundColor: #000000,
+        foregroundColor: #00f7ff,
+        labelColor: #c6e8d7,
+        labelFontSize: 1vw,
+        duration: 3s,
+        animationDelay: 1s,
+    ),
+    chart-3: (svgSize: 5vw,
+        percentage: 25,
+        strokeWidth: 0.8vw,
+        backgroundColor: #000000,
+        foregroundColor: #00f7ff,
+        labelColor: #c6e8d7,
+        labelFontSize: 1vw,
+        duration: 3s,
+        animationDelay: 1s,
+    ),
+    chart-4: (svgSize: 5vw,
+        percentage: 13,
+        strokeWidth: 0.8vw,
+        backgroundColor: #000000,
+        foregroundColor: #00f7ff,
+        labelColor: #c6e8d7,
+        labelFontSize: 1vw,
+        duration: 3s,
+        animationDelay: 1s,
+    ),
+    chart-5: (svgSize: 5vw,
+        percentage: 4,
+        strokeWidth: 0.8vw,
+        backgroundColor: #000000,
+        foregroundColor: #00f7ff,
+        labelColor: #c6e8d7,
+        labelFontSize: 1vw,
+        duration: 3s,
+        animationDelay: 1s,
+    ),
+    chart-6: (svgSize: 5vw,
+        percentage: 7,
+        strokeWidth: 0.8vw,
+        backgroundColor: #000000,
+        foregroundColor: #00f7ff,
+        labelColor: #c6e8d7,
+        labelFontSize: 1vw,
+        duration: 3s,
+        animationDelay: 1s,
+    ),
+    chart-7: (svgSize: 5vw,
+        percentage: 6,
+        strokeWidth: 0.8vw,
+        backgroundColor: #000000,
+        foregroundColor: #00f7ff,
+        labelColor: #c6e8d7,
+        labelFontSize: 1vw,
+        duration: 3s,
+        animationDelay: 1s,
+    ),
+    chart-8: (svgSize: 5vw,
+        percentage: 4,
+        strokeWidth: 0.8vw,
+        backgroundColor: #000000,
+        foregroundColor: #00f7ff,
+        labelColor: #c6e8d7,
+        labelFontSize: 1vw,
+        duration: 3s,
+        animationDelay: 1s,
+    ),
+);
+
+$svgSize: map-get(map-get($configs, chart-1), svgSize);
+$svgSize: map-get(map-get($configs, chart-2), svgSize);
+$svgSize: map-get(map-get($configs, chart-3), svgSize);
+$svgSize: map-get(map-get($configs, chart-4), svgSize);
+$svgSize: map-get(map-get($configs, chart-5), svgSize);
+$svgSize: map-get(map-get($configs, chart-6), svgSize);
+$svgSize: map-get(map-get($configs, chart-7), svgSize);
+$svgSize: map-get(map-get($configs, chart-8), svgSize);
+
+.chart-1 {
+    transform: skewX(35deg);
+    left: 0.6vw;
+}
+
+.chart-2 {
+    transform: skewX(35deg);
+    left: 0.6vw;
+}
+
+.chart-3 {
+    transform: skewX(35deg);
+    left: 1vw;
+}
+
+.chart-4 {
+    transform: skewX(35deg);
+    left: 1vw;
+}
+
+.chart-5 {
+    transform: skewX(-35deg);
+    left: 5vw;
+}
+
+.chart-6 {
+    transform: skewX(-35deg);
+    left: 5vw;
+}
+
+.chart-7 {
+    transform: skewX(-35deg);
+    left: 5vw;
+}
+
+.chart-8 {
+    transform: skewX(-35deg);
+    left: 1vw;
+}
+
+
+/* ------- DO NOT EDIT BELOW --------- */
+$pi: 3.14;
+$labelData: '';
+
+@for $i from 0 to 101 {
+    $labelData: $labelData + $i + '%' + '\a';
+}
+
+@each $chart, $param in $configs {
+
+    $c: (
+        map-get($param, svgSize) - map-get($param, strokeWidth)) * $pi;
+    $cOffSet: (
+        map-get($param, percentage)/100)*$c;
+
+    .#{$chart} {
+        width: map-get($param, svgSize
+        );
+    height: map-get($param, svgSize);
+    margin: 0;
+    position: relative;
+
+    &.animate {
+        svg .circle-foreground {
+            animation: offset map-get($param, duration) ease-in-out forwards;
+            animation-delay: map-get($param, animationDelay);
+        }
+
+        figcaption:after {
+            animation: #{$chart}-label map-get($param, duration) steps(map-get($param, percentage)) forwards;
+            animation-delay: map-get($param, animationDelay);
+        }
+    }
+
+    svg {
+        width: 100%;
+        height: 100%;
+
+        .circle-background {
+            r: (map-get($param, svgSize) - map-get($param, strokeWidth))/2;
+            cx: 50%;
+            cy: 50%;
+            fill: none;
+            stroke: map-get($param, backgroundColor);
+            stroke-width: map-get($param, strokeWidth);
+        }
+
+        .circle-foreground {
+            @extend .circle-background;
+            stroke: map-get($param, foregroundColor);
+            stroke-dasharray: $cOffSet $c;
+            stroke-dashoffset: $cOffSet;
+            stroke-linecap: round;
+            transform-origin: 50% 50%;
+            transform: rotate(180deg);
+        }
+    }
+
+    figcaption {
+        display: inline-block;
+        width: 100%;
+        height: map-get($param, labelFontSize);
+        overflow: hidden;
+        text-align: center;
+        color: map-get($param, labelColor);
+        position: absolute;
+        top: calc(50% - #{map-get($param, labelFontSize)/2});
+        left: 0;
+        font-size: 0;
+        font-family: 'TT Commons';
+
+        &:after {
+            display: inline-block;
+            content: $labelData;
+            white-space: pre;
+            font-size: map-get($param, labelFontSize);
+            line-height: map-get($param, labelFontSize);
+        }
+    }
+}
+
+@keyframes #{$chart}-label {
+    100% {
+        transform: translateY(map-get($param, labelFontSize) * (-(map-get($param, percentage))));
+    }
+}
+}
+
+@keyframes offset {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}

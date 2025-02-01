@@ -1,0 +1,82 @@
+.popup-container {
+    z-index: 1001;
+    display: block;
+    flex-direction: column;
+    position: fixed;
+    width: 35vw;
+    height: 35vw;
+    top: 5vw;
+    left: 32vw;
+    border-radius: 50px 50px 50px 50px;
+    border: 1px solid rgba(255, 255, 255, 0.36);
+    opacity: 1;
+    background: linear-gradient(42.09deg, rgba(26, 27, 35, 0.7) 7.06%, rgba(46, 48, 68, 0.7) 93.69%);
+    box-shadow: 0px 38px 102.19999694824219px 0px rgba(0, 0, 0, 0.93);
+
+    .title {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+
+        .line1 {
+            position: relative;
+            top: 2vw;
+            font-family: Audiowide;
+            font-size: 2vw;
+            text-align: center;
+        }
+
+        .line2 {
+            position: relative;
+            font-family: Audiowide;
+            width: 25vw;
+            top: 1vw;
+            left: 11vw;
+            font-size: 2vw;
+            font-weight: 600;
+            color: rgb(36, 35, 35);
+            text-shadow: 0.1vh 0.1vh white;
+        }
+
+        img {
+            position: relative;
+            width: 10vw;
+            left: 12vw;
+            top: 0.5vw;
+        }
+    }
+
+    .body {
+        position: relative;
+
+        img {
+            position: relative;
+            width: 5vw;
+            top: 6vw;
+            left: 15vw;
+        }
+
+        .label {
+            position: relative;
+            top: 6vw;
+            font-family: "TT Commons";
+            font-size: 2vw;
+            text-align: center;
+            font-weight: 600;
+        }
+    }
+
+    button {
+        top: 10vw;
+        left: 11vw;
+        position: relative;
+        width: 12vw;
+        height: 3.5vw;
+        border-radius: 50px;
+        font-family: Audiowide;
+        font-size: 1.3vw;
+        background: linear-gradient(90deg, #39C5C6 16.01%, #F55396 85%);
+        color: white;
+        border: none;
+    }
+}

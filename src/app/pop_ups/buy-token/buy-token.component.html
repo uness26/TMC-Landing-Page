@@ -1,0 +1,67 @@
+<div class="popup-container" *ngIf="popupVisible">
+  <button class="close" ><i class="fa fa-times" aria-hidden="true" (click)="closePopup()"></i></button>
+  <div class="title">
+    <div class="line1">Buy&nbsp;<span>Token</span></div>
+    <img src="../../../assets/images/Layer_2.png" />
+    <div class="line2">CURRENT PRICE</div>
+  </div>
+  <div class="current-price">
+    <div class="usdt-container">
+      <div class="usdt-text">
+        0.019<span>usdt</span>
+      </div>
+    </div>
+    <div class="solde-container">
+      <div class="sold-text">
+        20%<span>sold</span>
+      </div>
+    </div>
+  </div>
+  <div style="color: red;" class="error-message" *ngIf="errorMessage">{{ errorMessage }}</div>
+
+  <form [formGroup]="buyTokenForm" (ngSubmit)="onSubmit()">
+
+    <div class="row">
+      <img src="../../../assets/images/utilisateur.png" alt="">
+      <input type="text" placeholder="Name * ..." formControlName="name" />
+    </div>
+
+    <div class="row">
+      <img src="../../../assets/images/mail.png" alt="">
+      <input type="text" placeholder="Email * ..." formControlName="email" />
+    </div>
+
+    <div class="row">
+      <img src="../../../assets/images/phone-call.png" alt="">
+      <input type="text" placeholder="Phone * ..." formControlName="phone" />
+    </div>
+
+    <div class="row">
+      <img src="../../../assets/images/key.png" alt="">
+      <input type="password" placeholder="Password * ..." formControlName="password" />
+    </div>
+
+
+    <div class="row">
+      <img src="../../../assets/images/key.png" alt="">
+      <input type="text" placeholder="Confirm Password * ..." />
+    </div>
+
+    <div class="radio-group">
+      <div>
+        <input type="radio" id="usdt" name="radioButton">
+        <label for="usdt">USDT</label>
+      </div>
+      <div>
+        <input label=" AVAX" type="radio" id="avax" name="radioButton">
+        <label for="avax">AVAX</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <input type="text" placeholder="Purchase Amount * ..." />
+    </div>
+
+    <button type="submit" class="submit-btn">TERMS AGREE</button>
+  </form>
+</div>

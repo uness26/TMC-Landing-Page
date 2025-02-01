@@ -1,0 +1,22 @@
+<div class="popup-container" *ngIf="popupVisible">
+    <div class="title">
+        <div class="line1">Join The Community </div>
+        <div class="line2">For Airdrop </div>
+        <img src="../../../assets/images/Layer_2.png" />
+    </div>
+
+    <div class="body">
+        <div class="step">Step&nbsp;<span>(3/5)</span></div>
+        <img src="../../../../assets/images/discorde 1.png"/>
+        <div class="label"><button (click)="followDiscord()">Follow Discord</button> </div>
+    </div>
+
+    <div class="btns">
+        <button (click)="showPreviousPopup()" class="btn1">RETURN</button>
+        <button (click)="showNextPopup()" class="btn2" [disabled]="enabled">NEXT</button>
+    </div>
+</div>
+
+<app-telegram-popup *ngIf="nextPopupVisible"></app-telegram-popup>
+
+

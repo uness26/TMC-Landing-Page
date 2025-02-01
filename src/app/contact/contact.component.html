@@ -1,0 +1,35 @@
+<section id="contact">
+    <div class="container">
+        <div class="title">
+            Contact Us
+            <img src="../../assets/images/Layer_1.png" alt="">
+        </div>
+        <div style="color: red;" class="error-message" *ngIf="errorMessage">{{ errorMessage }}</div>
+
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <div class="first-inputs">
+                <div>
+                    <img src="../../assets/images/utilisateur.png" alt="">
+                    <input type="text" placeholder="Full Name * ..." formControlName="fullName">
+                </div>
+
+                <div>
+                    <img src="../../assets/images/mail.png" alt="">
+                    <input type="text" placeholder="Email * ..." formControlName="email">
+                </div>
+            </div>
+
+            <div class="second-input">
+                <img src="../../assets/images/ecrire 1.png" alt="">
+                <input type="text" placeholder="Object * ..." formControlName="object">
+            </div>
+
+            <div class="third-input">
+                <img src="../../assets/images/messager (3) 1.png" alt="">
+                <textarea type="text" placeholder="Subject * ..." formControlName="subject"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">SEND</button>
+        </form>
+    </div>
+</section>

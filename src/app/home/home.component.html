@@ -1,0 +1,68 @@
+<section>
+    <div class="big-text">
+        <div>Step Into The Future <br>With <span class="token">Token</span><span class="tmc">Tmc</span></div>
+    </div>
+    <div class="container">
+        <div class="ellipse13"></div>
+        <div class="left-container">
+            <div class="ellipse14"></div>
+            <div class="text1">TokensMarketCap is one in all digital</div>
+            <div class="text1">platform that represents its slogan</div>
+            <div class="text2">«‘WeChat’ of</div>
+            <div class="text2">Blockchains»</div>
+            <div class="ellipse12"></div>
+            <div class="ellipse11"></div>
+            <img src="../../../assets/images/Layer_1.png" />
+            <div class="buttons">
+                <button class="btn1" onclick="window.open('assets/documents/test.pdf', '_blank')">WHITEPAPER</button>
+                <button class="btn2" onclick="window.open('assets/documents/test.pdf', '_blank')">AUDIT</button>
+            </div>
+        </div>
+        <img class="main-img" src="../../assets/images/home-image.png" />
+
+        <div class="right-container">
+            <div class="numbers">
+                <div>
+                    <div class="nbr">42K +</div>
+                    <div class="text">COUNTS</div>
+                </div>
+                <br>
+                <div>
+                    <div class="nbr">8K +</div>
+                    <div class="text">USERS</div>
+                </div>
+                <br>
+                <div>
+                    <div class="nbr">2K +</div>
+                    <div class="text">BUY</div>
+                </div>
+            </div>
+            <br>
+            <div class="socials">
+                <a href="#"><img src="../../../assets/images/youtube.png" /></a>
+                <a href="#"><img src="../../../assets/images/instagram.png" /></a>
+                <a href="#"><img src="../../../assets/images/facebook.png" /></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="progress-bar-container">
+        <div class="stack">
+            <div class="presale">
+                Pre Sale
+            </div>
+            <div class="slidecontainer">
+                <input type="range" min="0" max="100" value="50" class="slider" id="myRange" />
+                <div class="v1-text">Maximum Raised Cap</div>
+                <div class="vl"></div>
+                <div class="v2"></div>
+                <div class="v2-text">28M Usdt</div>
+            </div>
+        </div>
+        <button (click)="showBuyTokenPopup()" class="buytoken">
+            <div class="text">BUY TOKEN </div>
+            <img src="../../assets/images/fleche-vers-le-bas (5) 1.png" alt="">
+        </button>
+    </div>
+</section>
+<app-buy-token *ngIf="buyTokenPopupVisible"></app-buy-token>

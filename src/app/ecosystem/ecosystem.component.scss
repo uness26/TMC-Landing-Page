@@ -1,0 +1,253 @@
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(90deg, rgba(19, 20, 28, 0) 8.53%, #13141C 49.9%, rgba(19, 20, 28, 0) 85.22%);
+    padding-bottom: 5vw;
+
+    .title-container {
+        margin: 5vh auto;
+        font-family: "Audiowide", sans-serif;
+        font-size: 4vw;
+        text-align: center;
+
+        span {
+            color: rgb(36, 35, 35);
+            text-shadow: 0.1vh 0.1vh white;
+        }
+
+        img {
+            position: relative;
+            width: 20vw;
+            top: -4vw;
+            left: 8vw;
+        }
+    }
+
+
+    .container {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        top: -2vw;
+    }
+
+    .gouvernance {
+        width: 18vw;
+        height: 30vw;
+        left: -4vw;
+        justify-content: center;
+        background: linear-gradient(90deg, rgba(64, 72, 72, 0.1), rgba(173, 173, 173, 0.1) 92.49%);
+        border: 1px solid rgba(255, 255, 255, 0.096);
+        border-radius: 30px 15px 30px 15px;
+        transform: skewX(20deg);
+        position: relative;
+
+        .logo {
+            top: -3vw;
+            left: 6.5vw;
+            position: inherit;
+            align-items: center;
+            width: 6vw;
+            height: 5vw;
+            background: rgba(245, 83, 150, 1);
+            border-radius: 40px 10px 40px 10px;
+            transform: skewX(25deg);
+
+            img {
+                position: inherit;
+                width: 4vw;
+                top: 1vw;
+                left: 1vw;
+
+            }
+        }
+
+
+        span {
+            font-family: Audiowide;
+            font-size: 1.8vw;
+            top: 0vw;
+            left: 1vw;
+            position: inherit;
+        }
+
+        p {
+            top: 1vw;
+            padding: 1vw;
+            font-family: TT Commons;
+            font-size: 1.2vw;
+            font-weight: 400;
+            text-align: center;
+            color: rgb(211, 207, 207);
+            transform: skewX(-10deg);
+            position: inherit;
+
+        }
+    }
+
+    .academy {
+        width: 18vw;
+        height: 30vw;
+        left: -1vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: linear-gradient(90deg, rgba(64, 72, 72, 0.1), rgba(173, 173, 173, 0.1) 92.49%);
+        border: 1px solid rgba(255, 255, 255, 0.096);
+        border-radius: 30px 15px 30px 15px;
+        transform: skewX(15deg);
+        position: relative;
+
+        .logo {
+            top: -3.5vw;
+            left: 6vw;
+            position: inherit;
+            align-items: center;
+            width: 6vw;
+            height: 5.5vw;
+            background: rgba(57, 197, 198, 1);
+            border-radius: 20px 15px 20px 15px;
+            transform: skewX(15deg);
+
+
+            img {
+                position: inherit;
+                width: 4vw;
+                height: 2.5vw;
+                top: 1.5vw;
+                left: 1vw;
+
+            }
+
+        }
+
+        span {
+            font-family: Audiowide;
+            font-size: 2vw;
+            top: -1.2vw;
+            left: 3vw;
+            position: inherit;
+        }
+
+        p {
+            padding: 1vw;
+            top: -1vw;
+            font-family: TT Commons;
+            font-size: 1.2vw;
+            font-weight: 400;
+            text-align: center;
+            color: rgb(211, 207, 207);
+            position: inherit;
+
+        }
+    }
+
+    .dex {
+        width: 18vw;
+        height: 30vw;
+        right: -9vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: linear-gradient(90deg, rgba(64, 72, 72, 0.1), rgba(173, 173, 173, 0.1) 92.49%);
+        border: 1px solid rgba(255, 255, 255, 0.096);
+        border-radius: 15px 30px 15px 30px;
+        transform: skewX(-15deg);
+        position: relative;
+
+        .logo {
+            top: -5.5vw;
+            left: 6vw;
+            position: inherit;
+            align-items: center;
+            width: 6vw;
+            height: 5.5vw;
+            background: rgba(245, 83, 150, 1);
+            border-radius: 15px 20px 15px 20px;
+
+            img {
+                position: relative;
+                width: 5vw;
+                height: 3vw;
+                top: 1vw;
+                left: 0.5vw;
+                transform: skewX(15deg);
+
+            }
+
+        }
+
+        span {
+            font-family: Audiowide;
+            font-size: 2vw;
+            top: -3vw;
+            left: 6vw;
+            position: inherit;
+        }
+
+        p {
+            padding: 1vw;
+            top: -2.8vw;
+            font-family: TT Commons;
+            font-size: 1.2vw;
+            font-weight: 400;
+            text-align: center;
+            color: rgb(211, 207, 207);
+            position: inherit;
+
+        }
+    }
+
+    .wallet {
+        width: 18vw;
+        right: -12vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: linear-gradient(90deg, rgba(64, 72, 72, 0.1), rgba(173, 173, 173, 0.1) 92.49%);
+        border: 1px solid rgba(255, 255, 255, 0.096);
+        border-radius: 15px 30px 15px 30px;
+        transform: skewX(-20deg);
+        position: relative;
+
+        .logo {
+            top: -5.5vw;
+            left: 5vw;
+            position: inherit;
+            align-items: center;
+            width: 6vw;
+            height: 5.5vw;
+            background: rgba(57, 197, 198, 1);
+            border-radius: 10px 30px 10px 30px;
+
+
+            img {
+                position: relative;
+                width: 4vw;
+                top: 1.5vw;
+                left: 1vw;
+            }
+        }
+
+        span {
+            font-family: Audiowide;
+            font-size: 2vw;
+            top: -2.5vw;
+            left: 4.5vw;
+            position: inherit;
+        }
+
+        p {
+            padding: 1vw;
+            top: -2.2vw;
+            font-family: TT Commons;
+            font-size: 1.2vw;
+            font-weight: 400;
+            text-align: center;
+            color: rgb(211, 207, 207);
+            position: inherit;
+
+        }
+    }
+}

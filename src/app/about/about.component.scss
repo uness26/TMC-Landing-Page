@@ -1,0 +1,113 @@
+section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(90deg, rgba(19, 20, 28, 0) 8.53%, #13141C 49.9%, rgba(19, 20, 28, 0) 85.22%);
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+
+    .line1 {
+        width: 80%;
+        font-family: Audiowide;
+        font-size: 60px;
+        font-weight: 400;
+        text-align: left;
+        color: rgb(36, 35, 35);
+        text-shadow: 0.1vh 0.1vh white;
+    }
+
+    .line2 {
+        width: 80%;
+        height: 149px;
+        font-family: Audiowide;
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 50px;
+        text-align: left;
+    }
+
+    img {
+        position: relative;
+        width: 50%;
+        left: 9vw;
+        top: -2vw;
+    }
+
+    p {
+        font-family: TT Commons;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: left;
+
+    }
+}
+
+.right-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    img {
+        width: 30vw;
+        margin-top: 2vw;
+    }
+
+    .timer {
+        top: -2vw;
+        width: 35vw;
+        height: 15%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background: linear-gradient(90deg, rgba(64, 72, 72, 0.1), rgba(173, 173, 173, 0.1) 92.49%);
+        border: 1px solid rgba(255, 255, 255, 0.096);
+        border-radius: 15px 30px 15px 30px;
+        transform: skewX(-45deg);
+        position: relative;
+
+        .timer-value {
+            position: relative;
+            transform: skewX(45deg);
+            font-family: "TT Commons", sans-serif;
+            text-align: left;
+            justify-content: space-between;
+        }
+
+        .number {
+            position: relative;
+            font-size: 4vw;
+            line-height: 5vw;
+        }
+
+        .letter {
+            position: relative;
+            font-size: 2.5vw;
+            line-height: 5vw;
+        }
+
+        .separation {
+            position: relative;
+            color: rgba(57, 197, 198, 1);
+            font-size: 2.5vw;
+            line-height: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 1172px) {
+
+    section {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-container {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+}

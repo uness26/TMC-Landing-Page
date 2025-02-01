@@ -1,0 +1,25 @@
+<div class="popup-container" *ngIf="popupVisible">
+    <div class="title">
+        <div class="line1">Join The Community </div>
+        <div class="line2">For Airdrop </div>
+        <img src="../../../assets/images/Layer_2.png" />
+    </div>
+
+    <div class="body">
+        <div class="step">Step&nbsp;<span>(5/5)</span></div>
+        <div class="name">
+            <img src="../../../../assets/images/github 1.png"/>
+            <input type="text"/>
+           
+        </div>
+        <div class="label">Your Name</div>
+        <div class="label2"><button (click)="followGithub()">Follow Github</button> </div>
+    </div>
+
+    <div class="btns">
+        <button (click)="showPreviousPopup()" class="btn1">RETURN</button>
+        <button (click)="showNextPopup()" class="btn2" [disabled]="enabled">FINISH</button>
+    </div>
+</div>
+
+<app-sucess-popup *ngIf="nextPopupVisible"></app-sucess-popup>
